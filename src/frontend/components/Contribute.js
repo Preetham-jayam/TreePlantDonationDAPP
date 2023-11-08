@@ -41,6 +41,9 @@ const DonateAndPlantTree = ({ marketplace, account }) => {
         });
 
         alert("Donation successful! You received an NFT.");
+        setDonationAmount(0);
+        setLocation('');
+        setSpecies('');
       } else {
         alert("Unable to add data to IPFS Pinata");
       }
@@ -50,8 +53,8 @@ const DonateAndPlantTree = ({ marketplace, account }) => {
   };
 
   return (
-    <div className="container">
-      <h2 className="my-4">Donate and Plant a Tree</h2>
+    <div className="container my-4">
+      <h2 className="text-center">Donate and Plant a Tree</h2>
       <form>
         <div className="form-group">
           <label htmlFor="donationAmount">Donation amount (ETH):</label>
@@ -85,7 +88,7 @@ const DonateAndPlantTree = ({ marketplace, account }) => {
         </div>
         <button
           type="button"
-          className="btn btn-primary my-3"
+          className="btn btn-primary btn-block my-3"
           onClick={handleCombinedAction}
         >
           Donate

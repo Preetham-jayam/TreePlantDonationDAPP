@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 contract OneTreeNFTMarketplace is ERC721URIStorage {
     address payable public owner;
-    uint256 public listPrice = 0.01 ether;
+    uint256 public listPrice = 0.00001 ether;
     uint256 public tokenIdCounter = 1;
 
     constructor() ERC721("OneTreePlantedNFT", "OTPNFT") {

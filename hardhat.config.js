@@ -4,9 +4,9 @@ module.exports = {
   solidity: "0.8.4",
   networks:{
     hardhat:{},
-    mumbai:{
-      url: "https://polygon-mumbai.g.alchemy.com/v2/m8AxTJ9gftXFtQiq4dBB4Jf6cQWedi36",
-      accounts:[`0x${"7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6"}`,],
+    sepolia:{
+      url: "https://eth-sepolia.g.alchemy.com/v2/f_olXWNtz28_Mh8-u0CpAS-watfyGnxy",
+      accounts:[`0x${"dbcfe66847a0e62f91c4faa239f4af7b45caff2efd6ce872135b6acded1a4946"}`,],
     },
   },
   paths: {

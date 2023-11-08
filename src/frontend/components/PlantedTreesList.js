@@ -33,7 +33,10 @@ const PlantedTrees = ({ marketplace, userAddress }) => {
         const signer = provider.getSigner();
         const contract = new ethers.Contract(TreePlantingMarketplaceAddress.address, TreePlantingMarketplaceAbi.abi, signer);
 
+        console.log(price);
+
         const salePrice = ethers.utils.parseEther(price); 
+        console.log(salePrice);
         const transaction = await contract.purchaseNFT(tokenId, {
           value: salePrice,
         });
